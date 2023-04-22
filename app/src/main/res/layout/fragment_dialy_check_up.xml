@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/_40sdp"
+    android:background="@color/colorGrayLight"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_text_daily_checkup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:padding="@dimen/_10sdp"
+            android:text="Daily Checkup"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_18sdp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_menu_bid_adapter" />
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_bahamas_logo"
+            android:layout_marginLeft="@dimen/_5sdp"
+            app:layout_constraintLeft_toRightOf="@+id/tv_text_daily_checkup"
+            app:layout_constraintTop_toTopOf="parent"
+            app:riv_oval="true" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view_isolate_daily_checkup"
+            android:layout_width="@dimen/pad_mar_0"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:visibility="gone"
+            app:cardCornerRadius="@dimen/_5sdp"
+            app:contentPadding="@dimen/_15sdp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_text_daily_checkup"
+            tools:visibility="visible">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/iv_isolate_daily_checkup"
+                    android:layout_width="@dimen/_45sdp"
+                    android:layout_height="@dimen/_45sdp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_plus"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:riv_oval="true" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_isolate_text_daily_checkup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Isolate and monitor"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/_13sdp"
+                    app:layout_constraintLeft_toRightOf="@+id/iv_isolate_daily_checkup"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_date_daily_checkup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="20 December 2020"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/_11sdp"
+                    app:layout_constraintLeft_toRightOf="@+id/iv_isolate_daily_checkup"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_isolate_text_daily_checkup" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_checkup_text_daily_checkup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Today's Checkup Results"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/_12sdp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/iv_isolate_daily_checkup" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_checkup_text_daily_checkup_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/today_checkup_results_desc"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/_11sdp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_checkup_text_daily_checkup" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view_daily_check_up"
+            android:layout_width="@dimen/pad_mar_0"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            app:contentPadding="@dimen/_5sdp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/card_view_isolate_daily_checkup">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_health_care_daily_checkup"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:src="@drawable/ic_health_care"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_health_care_daily_checkup"
+                    android:layout_width="@dimen/pad_mar_0"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:text="New Checkup"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/_13sdp"
+                    app:layout_constraintLeft_toRightOf="@+id/iv_health_care_daily_checkup"
+                    app:layout_constraintRight_toLeftOf="@+id/tv_start_daily_checkup"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_self_report_daily_checkup"
+                    android:layout_width="@dimen/pad_mar_0"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:text="Self report your symtoms"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/_11sdp"
+                    app:layout_constraintLeft_toRightOf="@+id/iv_health_care_daily_checkup"
+                    app:layout_constraintRight_toLeftOf="@+id/tv_start_daily_checkup"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_health_care_daily_checkup" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_start_daily_checkup"
+                    android:layout_width="@dimen/pad_mar_0"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_start_corner_radius"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/_1sdp"
+                    android:paddingBottom="@dimen/_1sdp"
+                    android:text="Start"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_12sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintWidth_percent="0.2" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_text_history_checkup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:padding="@dimen/_10sdp"
+            android:text="History"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/card_view_daily_check_up" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_history_text_2_daily_checkup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:paddingLeft="@dimen/_10sdp"
+            android:text="A History if your daily checkups will be shown here."
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_text_history_checkup" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="@dimen/pad_mar_0"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_history_text_2_daily_checkup"
+            tools:listitem="@layout/adapter_test_history_list" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

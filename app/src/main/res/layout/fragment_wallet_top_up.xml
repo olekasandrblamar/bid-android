@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:background="@drawable/bg_edt8"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/_25sdp"
+                    android:paddingBottom="@dimen/_25sdp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:layout_marginTop="@dimen/_6sdp"
+                            android:layout_weight="1"
+                            android:gravity="start"
+                            android:text="Currency"
+                            android:textColor="@color/colorBlueSendDetails"
+                            android:textSize="@dimen/_15sdp"></TextView>
+
+                        <EditText
+                            android:id="@+id/amount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/_20sdp"
+                            android:background="@drawable/bg_btn_unselect"
+                            android:digits="0123456789"
+                            android:hint="Currency"
+                            android:imeOptions="actionNext"
+                            android:inputType="number"
+                            android:maxLength="16"
+                            android:padding="@dimen/_10sdp"
+                            android:paddingStart="@dimen/_20sdp"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/_13sdp" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:layout_marginTop="@dimen/_6sdp"
+                            android:gravity="start"
+                            android:text="Select Payment Method"
+                            android:textColor="@color/colorBlueSendDetails"
+                            android:textSize="@dimen/_15sdp"></TextView>
+
+                        <LinearLayout
+                            android:id="@+id/saved_card"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_35sdp"
+                            android:layout_marginLeft="@dimen/_20sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/_20sdp"
+                            android:background="#EBECED"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/_50sdp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="bottom"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                app:srcCompat="@drawable/debit_credit_card">
+
+                            </ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/_15sdp"
+                                android:layout_weight="1"
+                                android:text="Saved Cards"
+                                android:textColor="@color/colorBlueSendDetails"
+                                android:textSize="@dimen/_15sdp"></TextView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/saved_drop_down"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_35sdp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_25sdp"
+                                android:layout_gravity="center"
+                                android:layout_marginHorizontal="@dimen/_30sdp"
+                                android:background="#EBECED"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:id="@+id/card_type_img"
+                                    android:layout_width="@dimen/_30sdp"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="bottom"
+                                    app:srcCompat="@drawable/mastercard_group" />
+
+                                <TextView
+                                    android:id="@+id/card_number"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="............Wating........."
+                                    android:textSize="@dimen/_12sdp">
+
+                                </TextView>
+
+                                <ImageView
+                                    android:layout_width="@dimen/_10sdp"
+                                    android:layout_height="@dimen/_10sdp"
+                                    android:layout_marginRight="@dimen/_5sdp"
+                                    app:srcCompat="@drawable/spine_down" />
+                            </LinearLayout>
+                            <!--                            <ImageView-->
+                            <!--                                android:layout_width="@dimen/_40sdp"-->
+                            <!--                                android:layout_height="@dimen/_40sdp"-->
+                            <!--                                android:layout_gravity="start"-->
+                            <!--                                android:src="@drawable/mastercard_group"></ImageView>-->
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/kanoo"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_35sdp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/_20sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/_20sdp"
+                            android:background="#EBECED"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/_50sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                app:srcCompat="@drawable/kanoo">
+
+                            </ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_15sdp"
+                                android:layout_weight="1"
+                                android:gravity="start"
+                                android:text="Kanoo"
+                                android:textColor="@color/colorBlueSendDetails"
+                                android:textSize="@dimen/_15sdp"></TextView>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/proceed"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_marginBottom="48dp"
+                        android:background="@drawable/shape_sign_in_corner_radius"
+                        android:fontFamily="@font/poppins_semi_bold"
+                        android:gravity="center"
+                        android:text="Proceed"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/_13sdp" />
+                </LinearLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

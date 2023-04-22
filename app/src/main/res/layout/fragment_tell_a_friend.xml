@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="@android:color/white"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="@dimen/pad_mar_0"
+        android:layout_height="@dimen/pad_mar_0"
+        android:fillViewport="true"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_text_send_feedback"
+                android:layout_width="@dimen/pad_mar_0"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center"
+                android:lineSpacingMultiplier="1.2"
+                android:padding="@dimen/_10sdp"
+                android:text="@string/text_tell_a_friend"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iv_get_started" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraint_layout_send_feedback"
+                android:layout_width="@dimen/pad_mar_0"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_35sdp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_text_send_feedback">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/text_email_send_feedback"
+                    android:layout_width="@dimen/pad_mar_0"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_your_email"
+                    android:textColorHint="@color/colorTextHint"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintWidth_percent="0.8">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/et_email_send_feedback"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorTextHint"
+                        android:fontFamily="@font/poppins_regular"
+                        android:imeOptions="actionNext"
+                        android:paddingBottom="@dimen/_15sdp"
+                        android:textColor="@color/colorTextSecondary"
+                        android:textColorHint="@color/colorTextSecondary"
+                        android:textSize="@dimen/_14sdp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <ImageView
+                    android:id="@+id/iv_email_send_feedback"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:src="@drawable/ic_clear"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@+id/text_email_send_feedback"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:id="@+id/view_line_add_email"
+                    android:layout_width="@dimen/pad_mar_0"
+                    android:layout_height="@dimen/pad_mar_1"
+                    android:background="@color/colorTextHint"
+                    android:visibility="gone"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/text_email_send_feedback"
+                    app:layout_constraintWidth_percent="1" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_feedback"
+                android:layout_width="@dimen/pad_mar_0"
+                android:layout_height="@dimen/_150sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@drawable/shape_test_result_list"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="top|start"
+                android:hint="@string/hint_your_message"
+                android:imeOptions="actionDone"
+                android:maxLines="6"
+                android:padding="@dimen/_10sdp"
+                android:textColor="@color/colorTextHint"
+                android:textColorHint="@color/colorTextHint"
+                android:textSize="@dimen/_14sdp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraint_layout_send_feedback"
+                app:layout_constraintWidth_percent="1" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_send_feedback"
+                android:layout_width="@dimen/pad_mar_0"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@drawable/shape_sign_in_corner_radius"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:gravity="center"
+                android:text="@string/hint_send"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_14sdp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_feedback"
+                app:layout_constraintWidth_percent="1" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

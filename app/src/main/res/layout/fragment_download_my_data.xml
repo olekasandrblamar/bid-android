@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="@android:color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_download_data"
+        android:layout_width="@dimen/_53sdp"
+        android:layout_height="@dimen/_83sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:src="@drawable/ic_download"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.9" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_download_data_desc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/download_data_desc"
+        android:gravity="center"
+        android:textColor="@color/colorTextHint"
+        android:textSize="@dimen/_13sdp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_download_data"
+        app:layout_constraintWidth_percent="0.9"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_download_data"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:fontFamily="@font/poppins_semi_bold"
+        android:text="@string/download_data"
+        android:gravity="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/_13sdp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_download_data_desc"
+        app:layout_constraintWidth_percent="0.9"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_download"
+        android:layout_width="@dimen/pad_mar_0"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_60sdp"
+        android:background="@drawable/shape_sign_in_corner_radius"
+        android:fontFamily="@font/poppins_semi_bold"
+        android:gravity="center"
+        android:text="@string/download"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_13sdp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_download_data"
+        app:layout_constraintWidth_percent="0.9" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

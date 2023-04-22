@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bg_gray">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:background="@color/colorWhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_100sdp"
+                android:background="@drawable/discover_top_bar"
+                android:orientation="horizontal"
+                >
+
+                    <LinearLayout
+                        android:id="@+id/discover_blueston_wallet"
+                        android:layout_width="0px"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:layout_weight="4"
+                        android:background="@drawable/bg_btn_white"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0px"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:layout_weight="1"
+                            android:lines="1"
+                            android:text="BLUESTONE WALLET"
+                            android:textColor="@color/colorLightBlue"
+                            android:textSize="@dimen/_10sdp"></TextView>
+
+                        <TextView
+                            android:id="@+id/amount"
+                            android:layout_width="match_parent"
+                            android:layout_height="0px"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:layout_weight="1"
+                            android:lines="1"
+                            android:text="$0.00"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/_18sdp"></TextView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0px"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:layout_weight="1"
+                            android:lines="1"
+                            android:text="Tap to top up"
+                            android:textColor="@color/colorGreen"
+                            android:textSize="@dimen/_10sdp"></TextView>
+                    </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:orientation="horizontal"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/discover_pay"
+                        android:layout_width="0px"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/_25sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/discover_arrow_top"></ImageView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Pay"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/_12sdp"></TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/discover_top_up"
+                        android:layout_width="0px"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/_25sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/discover_plus"></ImageView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Top Up"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/_12sdp"></TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/discover_more"
+                        android:layout_width="0px"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/_25sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/discover_more"></ImageView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="More"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/_12sdp"></TextView>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="0px"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/discover_transit"
+                        >
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:src="@drawable/discover_transit"
+                            >
+                        </ImageView>
+                        <TextView
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/_13sdp"
+                            android:textColor="@color/colorBlack"
+                            android:text="Transit"
+                            >
+                        </TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/discover_flights"
+                        android:layout_width="0px"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/discover_flights"></ImageView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Flights"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/_13sdp"></TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/discover_boat"
+                        android:layout_width="0px"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/discover_boat"></ImageView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Boat"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/_13sdp"></TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/discover_activities"
+                        android:layout_width="0px"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/discover_activities"></ImageView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Activities"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/_13sdp"></TextView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="4"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/discover_mobile_top_up"
+                        android:layout_width="0px"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/discover_mobile"></ImageView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="Mobile\nTop Up"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/_13sdp"></TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/discover_bill_payment"
+                        android:layout_width="0px"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/discover_bill_payment"></ImageView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Bill Payment"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/_13sdp"></TextView>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Deals"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/_20sdp"></TextView>
+
+                <LinearLayout
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/bg_btn_orange"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0px"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="18"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/_25sdp"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0px"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_weight="1"
+                        android:text="Vouchers"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/_15sdp"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0px"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_weight="1"
+                        android:text="2 Expiring Soon"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/_10sdp"></TextView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:background="@drawable/bg_promo_back">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_edittext_icon"
+                    android:drawableLeft="@drawable/polygon"
+                    android:drawableRight="@drawable/ic_chevron_right_black_24dp"
+                    android:hint="Got a promo code? Enter here"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:textColorHint="@color/colorBlack" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_125sdp"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:visibility="gone"
+                android:orientation="vertical"
+                >
+
+<!--                <FrameLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="500dp">-->
+
+<!--                    <WebView-->
+<!--                        android:id="@+id/webview"-->
+<!--                        android:background="@drawable/rounded_webview"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:layout_alignParentLeft="true"-->
+<!--                        android:layout_alignParentTop="true"-->
+<!--                        />-->
+
+<!--                    <EditText-->
+<!--                        android:layout_marginLeft="@dimen/_15sdp"-->
+<!--                        android:layout_marginRight="@dimen/_15sdp"-->
+<!--                        android:layout_marginTop="225dp"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:background="@drawable/bg_edt1"-->
+<!--                        android:inputType="textEmailAddress"-->
+<!--                        android:drawableLeft="@drawable/discover_search"-->
+<!--                        android:drawableRight="@drawable/ic_chevron_right_black_24dp"-->
+<!--                        android:hint="Search anything"-->
+<!--                        />-->
+<!--                </FrameLayout>-->
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardCornerRadius="20dp">
+<!--                    <WebView-->
+<!--                        android:id="@+id/webView"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent" />-->
+                    <com.bid.app.ui.custom.TouchyWebView
+                        android:id="@+id/webView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </com.bid.app.ui.custom.TouchyWebView>
+                    <EditText
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:layout_marginTop="225dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_edt1"
+                        android:inputType="textEmailAddress"
+                        android:paddingTop="@dimen/_3sdp"
+                        android:paddingBottom="@dimen/_3sdp"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:drawableLeft="@drawable/discover_search"
+                        android:drawableRight="@drawable/avatar"
+                        android:hint="Search anything"
+                        />
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:tag="@string/tag_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/bottom_bar"
+            style="@style/Widget.MaterialComponents.BottomAppBar.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_gravity="bottom"
+            app:backgroundTint="@color/colorPrimary"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:fabAlignmentMode="center"
+            app:fabCradleMargin="@dimen/_10sdp"
+            app:fabCradleRoundedCornerRadius="10dp"
+            app:fabCradleVerticalOffset="5dp"
+            app:hideOnScroll="false"
+            tools:layout_editor_absoluteX="-4dp"
+            tools:layout_editor_absoluteY="643dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+                <LinearLayout
+                    android:id="@+id/lt_bid_dashboard"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:id="@+id/iv_bid_dashboard"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:src="@drawable/ic_bid_logo"
+                        app:tint="@color/colorWhite"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:id="@+id/tv_bid_dashboard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/home"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorWhite"
+
+                        android:textSize="@dimen/_12sdp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lt_discover_wallet"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:id="@+id/iv_discover_wallet"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:src="@drawable/wallet"
+                        app:tint="@color/colorWhite"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:id="@+id/tv_discover_wallet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Wallet"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/_12sdp"
+                        />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/lt_discover_dashboard"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:id="@+id/iv_discover_dashboard"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:src="@drawable/ic_menu_discover"
+                        app:tint="@android:color/holo_orange_light" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_discover_dashboard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="@string/menu_discover"
+                        android:textColor="@android:color/holo_orange_light"
+                        android:textSize="@dimen/_12sdp"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.google.android.material.bottomappbar.BottomAppBar>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayoutx"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:tag="@string/tag_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_qr_dashboard"
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="@dimen/_90sdp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/_70sdp"
+            app:fabSize="normal"
+            app:layout_anchorGravity="center"
+            app:srcCompat="@drawable/ic_qr_code" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

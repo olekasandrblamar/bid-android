@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/colorWhite"
+    app:cardCornerRadius="@dimen/pad_mar_0"
+    app:cardElevation="@dimen/pad_mar_0">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_header_name_country_adapter_list"
+            android:layout_width="@dimen/pad_mar_0"
+            android:layout_height="wrap_content"
+            android:background="@color/colorGrayLight"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center_vertical"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/app_name"
+            android:textColor="@color/colorTextGray"
+            android:textSize="@dimen/_13sdp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint_layout_country_adapter_list"
+            android:layout_width="@dimen/pad_mar_0"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_header_name_country_adapter_list"
+            app:layout_constraintWidth_percent="0.9">
+
+            <View
+                android:id="@+id/view_divider_country_adapter_list"
+                android:layout_width="@dimen/pad_mar_0"
+                android:layout_height="@dimen/pad_mar_0_5"
+                android:background="@color/colorGray"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_name_country_adapter_list"
+                android:layout_width="@dimen/pad_mar_0"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center_vertical"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/app_name"
+                android:textColor="@color/colorTextGray"
+                android:textSize="@dimen/_13sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/radio_button_country_adapter_list"
+                app:layout_constraintTop_toBottomOf="@+id/view_divider_country_adapter_list" />
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/radio_button_country_adapter_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view_divider_country_adapter_list" />
+
+            <View
+                android:id="@+id/view_divider_2_country_adapter_list"
+                android:layout_width="@dimen/pad_mar_0"
+                android:layout_height="@dimen/pad_mar_0_5"
+                android:background="@color/colorGray"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_name_country_adapter_list" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="@android:color/white"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="@dimen/pad_mar_0"
+        android:layout_height="@dimen/pad_mar_0"
+        android:fillViewport="true"
+        android:orientation="vertical"
+        android:padding="@dimen/_20sdp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/_40sdp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_text_send_feedback"
+                android:layout_width="@dimen/pad_mar_0"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center"
+                android:lineSpacingMultiplier="1.2"
+                android:padding="@dimen/_10sdp"
+                android:text="@string/text_feedback"
+                android:textSize="@dimen/_10sdp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                tools:ignore="MissingConstraints" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraint_layout_send_feedback"
+                android:layout_width="@dimen/pad_mar_0"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/_20sdp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_text_send_feedback">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/text_email_tell_a_friend"
+                    android:layout_width="@dimen/pad_mar_0"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_friend_email"
+                    android:textColorHint="@color/colorTextHint"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintWidth_percent="1">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/et_email_send_feedback"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorTextHint"
+                        android:fontFamily="@font/poppins_regular"
+                        android:imeOptions="actionNext"
+                        android:inputType="textEmailAddress"
+                        android:paddingBottom="@dimen/_15sdp"
+                        android:textColor="@color/colorText"
+                        android:textColorHint="@color/colorTextHint"
+                        android:textSize="@dimen/_14sdp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <View
+                    android:id="@+id/view_line_tell_a_friend"
+                    android:layout_width="@dimen/pad_mar_0"
+                    android:layout_height="@dimen/pad_mar_1"
+                    android:background="@color/colorTextHint"
+                    android:visibility="gone"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/text_email_tell_a_friend"
+                    app:layout_constraintWidth_percent="1" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_message_tell_a_friend"
+                android:layout_width="@dimen/pad_mar_0"
+                android:layout_height="@dimen/_150sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@drawable/shape_test_result_list"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="top|start"
+                android:hint="@string/hint_your_message"
+                android:imeOptions="actionDone"
+                android:maxLines="6"
+                android:padding="@dimen/_10sdp"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorTextHint"
+                android:textSize="@dimen/_14sdp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraint_layout_send_feedback"
+                app:layout_constraintWidth_percent="1" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_send_feedback"
+                android:layout_width="@dimen/pad_mar_0"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@drawable/shape_sign_in_corner_radius"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:gravity="center"
+                android:text="@string/hint_send"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_14sdp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_message_tell_a_friend"
+                app:layout_constraintWidth_percent="1" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

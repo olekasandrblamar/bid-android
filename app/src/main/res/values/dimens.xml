@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <dimen name="pad_mar_0">0dp</dimen>
+    <dimen name="pad_mar_0_5">0.5dp</dimen>
+    <dimen name="pad_mar_1">1dp</dimen>
+    <dimen name="pad_mar_0_8">0.8dp</dimen>
+    ///////////////////////
+    <dimen name="card_fontSize_large">32sp</dimen>
+    <dimen name="card_fontSize_small">13sp</dimen>
+    <dimen name="card_fontSize_extra_small">10sp</dimen>
+
+    <dimen name="card_elevation">5dp</dimen>
+    <dimen name="card_corner_radius">0dp</dimen>
+    <dimen name="card_marginHorizontal">10dp</dimen>
+    <dimen name="card_marginVertical">10dp</dimen>
+    <dimen name="card_height">64dp</dimen>
+    <dimen name="card_dot_size">3dp</dimen>
+    <dimen name="card_dot_marginHorizontal">4dp</dimen>
+
+    <dimen name="stop_id_input_textSize">20sp</dimen>
+    <dimen name="stop_id_input_drawablePadding">10dp</dimen>
+    <dimen name="stop_id_input_padding">5dp</dimen>
+
+    <dimen name="action_button_radius">56dp</dimen>
+    <dimen name="action_button_margin">16dp</dimen>
+    <dimen name="action_button_elevation">4dp</dimen>
+
+    <dimen name="bottom_sheet_elevation">16dp</dimen>
+    <dimen name="bottom_sheet_peek_height">56dp</dimen>
+
+    <dimen name="route_text_size">34sp</dimen>
+    <dimen name="name_text_size">20sp</dimen>
+    <dimen name="direction_text_size">12sp</dimen>
+
+    <dimen name="schedule_card_margin">4dp</dimen>
+    <dimen name="schedule_card_time_dots_margin">5dp</dimen>
+
+
+    <dimen name="design_bottom_navigation_text_size" tools:override="true">12sp </dimen>
+
+    <dimen name="design_bottom_navigation_active_text_size" tools:override="true">12sp</dimen>
+</resources>

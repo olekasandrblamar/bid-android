@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">IDCardCamera</string>
+
+    <string name="touch_to_focus">Position your card at the center fo the white frame and take a picture</string>
+    <string name="crop_fail">裁剪失败</string>
+    <string name="no_flash">Flash is unavailable</string>
+</resources>

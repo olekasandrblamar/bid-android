@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/_50sdp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_name_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:paddingLeft="@dimen/_10sdp"
+            android:text="Name"
+            android:textColor="@color/colorTextHint"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_name_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorTextHint"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="Enter location name"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_15sdp"
+            android:textColor="@color/colorTextGray"
+            android:textColorHint="@color/colorTextHint"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintTop_toBottomOf="@+id/tv_name_address" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_line_1_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:paddingLeft="@dimen/_10sdp"
+            android:text="Address 1"
+            android:textColor="@color/colorTextHint"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_name_address" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_line_1_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorTextHint"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="Enter address line 1"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_15sdp"
+            android:textColor="@color/colorTextGray"
+            android:textColorHint="@color/colorTextHint"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_line_1_address" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_line_2_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:paddingLeft="@dimen/_10sdp"
+            android:text="Address 2"
+            android:textColor="@color/colorTextHint"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_line_1_address" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_line_2_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorTextHint"
+            android:hint="Enter address line 2 (Optional)"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_15sdp"
+            android:textColor="@color/colorTextGray"
+            android:textColorHint="@color/colorTextHint"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_line_2_address" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_city_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:paddingLeft="@dimen/_10sdp"
+            android:text="City"
+            android:textColor="@color/colorTextHint"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_line_2_address" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_city_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorTextHint"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="Enter your city"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_15sdp"
+            android:textColor="@color/colorTextGray"
+            android:textColorHint="@color/colorTextHint"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_city_address" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_state_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:paddingLeft="@dimen/_10sdp"
+            android:text="State"
+            android:textColor="@color/colorTextHint"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_city_address" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_state_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorTextHint"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="Enter your state"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_15sdp"
+            android:textColor="@color/colorTextGray"
+            android:textColorHint="@color/colorTextHint"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_state_address" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_country_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:paddingLeft="@dimen/_10sdp"
+            android:text="Country"
+            android:textColor="@color/colorTextHint"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_state_address" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_country_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorTextHint"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="Enter your country"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_15sdp"
+            android:textColor="@color/colorTextGray"
+            android:textColorHint="@color/colorTextHint"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_country_address" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_zip_code_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:paddingLeft="@dimen/_10sdp"
+            android:text="Zipcode"
+            android:textColor="@color/colorTextHint"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_country_address" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_zip_code_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:backgroundTint="@color/colorTextHint"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="Enter your zipcode"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_15sdp"
+            android:textColor="@color/colorTextGray"
+            android:textColorHint="@color/colorTextHint"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_zip_code_address" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_add_address"
+            android:layout_width="@dimen/pad_mar_0"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/shape_sign_in_corner_radius"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:text="@string/hint_add_address"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_zip_code_address"
+            app:layout_constraintWidth_percent="0.9" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

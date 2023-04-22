@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary">
+    <LinearLayout
+        android:id="@+id/map_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_260sdp">
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".MapsActivity" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pad"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_250sdp"
+        android:background="@drawable/bg_edt3"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_5sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/slide_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width = "match_parent"
+                android:layout_height = "match_parent">
+                <TextView
+                    android:id="@+id/from_station"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:gravity = "center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <com.ncorti.slidetoact.SlideToActView
+                android:id="@+id/confirm_slide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:elevation="6dp"
+                app:text="Slide to Start Schedule"
+                />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/gray">
+
+        </View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id = "@+id/status_note"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin = "@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/online_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:text="You are offline"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/online_status_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:ellipsize="marquee"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:text="You wont receive any ride requests"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/_12sdp"></TextView>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/go_online_btn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:background="@drawable/bg_btn_select"
+                android:text="Go Online"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_12sdp"></Button>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id = "@+id/station_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/bg_edt"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/to_station"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:text=""
+            android:gravity = "center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/iv_personal_profile"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_gravity="center_horizontal"
+        app:riv_border_color="@color/colorWhite"
+        app:riv_oval="true"
+        app:fabSize="normal"
+        app:layout_anchorGravity="center"
+        app:srcCompat="@drawable/ic_user" />
+
+    <ImageView
+        android:id="@+id/bus"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/_60sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_gravity="center_horizontal"
+        app:fabSize="normal"
+        app:layout_anchorGravity="center"
+        app:srcCompat="@drawable/bus_2" />
+
+
+    <ImageView
+        android:id="@+id/iv_qr_dashboard"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/_110sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_gravity="center_horizontal"
+        app:fabSize="normal"
+        app:layout_anchorGravity="center"
+        app:srcCompat="@drawable/ic_qr_code" />
+
+    <ImageView
+        android:id="@+id/iv_face_dashboard"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/_160sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_gravity="center_horizontal"
+        app:fabSize="normal"
+        app:layout_anchorGravity="center"
+        app:srcCompat="@drawable/facial_recognition" />
+
+    <ImageView
+        android:id="@+id/iv_sos"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/_210sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_gravity="center_horizontal"
+        app:fabSize="normal"
+        app:layout_anchorGravity="center"
+        app:srcCompat="@drawable/sos_1" />
+
+    <Switch
+        android:id="@+id/is_gps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="GPS:"
+        android:checked="true"
+        android:textOff="OFF"
+        android:textOn="ON"
+        android:visibility="gone"/>
+
+</RelativeLayout>

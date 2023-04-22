@@ -1,0 +1,292 @@
+<resources>
+
+    <string name="app_name" translatable="false">B-ID</string>
+
+    <string name="passport" translatable="false">Passport</string>
+
+    <string name="add_id_documents" translatable="false">Add ID Documents</string>
+
+    <string name="desc_id_documents" translatable="false">B-ID is a modern yet simple, and most secure way to prove your identity online and in person</string>
+
+    <string name="bahamas_passport" translatable="false">Bahamas Passport</string>
+
+    <string name="title_login" translatable="false">Login</string>
+    <string name="title_forget_password" translatable="false">Forget Password</string>
+    <string name="title_add_email_address" translatable="false">Add Email Address</string>
+    <string name="title_verification_code" translatable="false">Verification Code</string>
+    <string name="title_add_login_details" translatable="false">Add Login Details</string>
+    <string name="title_my_bid" translatable="false">My B-ID</string>
+    <string name="title_wallet" translatable="false">Wallet</string>
+    <string name="title_confirmation" translatable="false">Confirmation</string>
+    <string name="title_enter_card_details" translatable="false">Enter card details</string>
+    <string name="title_add_card" translatable="false">Add card</string>
+    <string name="title_card_detail" translatable="false">Card detail</string>
+    <string name="title_funds_upload" translatable="false">How would you like to add finds to your wallet</string>
+    <string name="title_payment_methods" translatable="false">Payment Methods</string>
+    <string name="title_your_cards" translatable="false">Your Cards</string>
+    <string name="title_your_balance" translatable="false">Your balance</string>
+    <string name="title_checkout" translatable="false">Checkout</string>
+    <string name="title_select_but_seat" translatable="false">Select Bus Seat</string>
+    <string name="title_discover" translatable="false">Discover</string>
+    <string name="title_tell_a_friend" translatable="false">Tell a Friend</string>
+    <string name="title_help" translatable="false">Help</string>
+    <string name="title_transaction_history" translatable="false">Transaction History</string>
+    <string name="title_about" translatable="false">About</string>
+    <string name="title_about_bid" translatable="false">About B-ID</string>
+    <string name="title_privacy_policy" translatable="false">Privacy Policy</string>
+    <string name="title_settings" translatable="false">Settings</string>
+    <string name="title_send_us_feedback" translatable="false">Send Feedback</string>
+    <string name="title_notification" translatable="false">Notifications</string>
+    <string name="title_download_data" translatable="false">Download My Data</string>
+    <string name="title_account_settings" translatable="false">Account Settings</string>
+    <string name="title_notifications" translatable="false">Notifications</string>
+    <string name="title_login_settings" translatable="false">Login Setting</string>
+    <string name="title_schedule_test" translatable="false">Schedule</string>
+    <string name="title_open_source" translatable="false">Open-Source Libraries</string>
+    <string name="title_personal_details" translatable="false">Personal Details</string>
+    <string name="title_id_documents" translatable="false">Id Documents</string>
+    <string name="title_select_your_id_documents" translatable="false">Select Your Id Document</string>
+    <string name="title_address" translatable="false">Address</string>
+    <string name="title_covid_test_result" translatable="false">COVID Test Result</string>
+    <string name="title_scanner" translatable="false">Scanner</string>
+    <string name="title_profile_update" translatable="false">Profile Update</string>
+    <string name="employment" translatable="false">Employment</string>
+    <string name="title_symptoms" translatable="false">Symptoms</string>
+    <string name="title_check_up" translatable="false">Check Up</string>
+    <string name="title_b_id" translatable="false">My B-ID</string>
+    <string name="title_send_details" translatable="false">Send Details</string>
+    <string name="title_select_details_send" translatable="false">Select Details To Send</string>
+    <string name="title_send_preview" translatable="false">Send Preview</string>
+    <string name="title_send_method" translatable="false">Send Method</string>
+    <string name="title_face_to_face_share" translatable="false">Face to Face</string>
+
+    <string name="account_updates_desc" translatable="false">Be notified when your video, document or details has been reviewed</string>
+    <string name="account_login_settings_desc" translatable="false">We don\'t store a copy of your fingerprint, we simply use your phone\'s fingerprint technology to log you in to the app. But remember, anyone with fingerprint access to this phone will b..</string>
+    <string name="account_updates" translatable="false">Account Updates</string>
+    <string name="use_fingerprint" translatable="false">User Fingerprint</string>
+    <string name="change_pin" translatable="false">Change PIN</string>
+    <string name="details_shared_desc" translatable="false">Be notified when you successfully share your details</string>
+    <string name="details_shared" translatable="false">Details Shared</string>
+    <string name="account_updates_desc1" translatable="false">Be notified when you have an action to be finished.</string>
+
+    <string name="download" translatable="false">Download</string>
+
+    <string name="download_data" translatable="false">Data will be Downloaded in Zip F...</string>
+    <string name="download_data_desc" translatable="false">Your personal details belongs to you. You should be able to access your data whenever you like.</string>
+
+    <string name="covid_test_results" translatable="false">My COVID 19 Test Results</string>
+    <string name="self_isolate" translatable="false">Self-isolate and Book a Test</string>
+    <string name="next_steps" translatable="false">Next Steps</string>
+    <string name="book_test" translatable="false">Book a test</string>
+    <string name="book_test_desc1" translatable="false">Based on your symptoms,you need to self-isolate and book a test.</string>
+    <string name="book_test_desc2" translatable="false">If your symptoms get worse please seek medical attention by booking for a further test through the app</string>
+
+    <string name="follow_doctor_orders" translatable="false">Follow your Doctor\'s orders</string>
+    <string name="follow_doctor_orders_desc" translatable="false">Your healthcare provider will tell you what to do next</string>
+
+    <string name="no_test_at_this_time" translatable="false">No test at this time</string>
+    <string name="no_test_at_this_time_desc" translatable="false">As of right now, your answers tell us you do not need to be tested for COVID-19 If anything change, or if you get sick, call your healthcare provider.</string>
+
+
+    <string name="select_country" translatable="false">Select Your Country</string>
+    <string name="default_notification_channel_id" translatable="false">BID</string>
+
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+
+    <string name="text_get_started" translatable="false">B-ID is a modern, simple and secure way to provide your identity online and in person.</string>
+
+    <string name="text_mobile_number" translatable="false">B-ID is a modern yet simple, and most \nsecure way to prove your identity \nonline and in person.</string>
+    <string name="text_add_email" translatable="false">Enter your email address and we\'ll \nsend you a verification code.</string>
+    <string name="text_otp_verify_one" translatable="false">We have sent a code to</string>
+    <string name="text_otp_verify_two" translatable="false">It may take a few moments to arrive.</string>
+    <string name="text_feedback" translatable="false">Got a suggestion for a new feature? We\'d\n love to hear it.</string>
+    <string name="text_tell_a_friend" translatable="false">Share the message to your friend and tell him about B-ID.</string>
+
+
+    <string name="text_have_an_account" translatable="false">Already have an Account</string>
+    <string name="text_sign_up" translatable="false">Sign Up</string>
+    <string name="text_create_pin" translatable="false">Enter your Password</string>
+    <string name="text_continue" translatable="false">Continue</string>
+    <string name="hint_mobile_number" translatable="false">Mobile Number</string>
+    <string name="hint_mobile_number_value" translatable="false">+1-242-8089086</string>
+    <string name="hint_mobile_verification_code" translatable="false">Mobile Verification Code</string>
+    <string name="hint_verify" translatable="false">Verify</string>
+    <string name="hint_resend_code" translatable="false">Resend Code</string>
+    <string name="hint_negative" translatable="false">(Negative)</string>
+    <string name="hint_positive" translatable="false">(Positive)</string>
+    <string name="hint_more_view" translatable="false">View more</string>
+    <string name="hint_next" translatable="false">Next</string>
+    <string name="hint_submit" translatable="false">Submit</string>
+    <string name="hint_show_pin" translatable="false">Show Pin</string>
+    <string name="hint_re_login" translatable="false">Try to login again</string>
+
+    <string name="hint_time" translatable="false">Time :</string>
+    <string name="hint_testing_location" translatable="false">Testing Location : </string>
+
+    <string name="today_checkup_results_desc" translatable="false">Based on your answers, Take up a test and Isolate/Monitor</string>
+
+
+    <string name="full_name" translatable="false">Full Name</string>
+    <string name="first_name" translatable="false">First Name</string>
+    <string name="last_name" translatable="false">Last Name</string>
+    <string name="date_of_birth" translatable="false">Date of Birth</string>
+    <string name="mobile_number" translatable="false">Mobile Number</string>
+    <string name="email" translatable="false">Email</string>
+    <string name="address" translatable="false">Address</string>
+    <string name="postal_code" translatable="false">Postal Code</string>
+    <string name="city" translatable="false">City</string>
+    <string name="state" translatable="false">State</string>
+    <string name="country" translatable="false">Country</string>
+    <string name="gender" translatable="false">Gender</string>
+    <string name="enter_your_name" translatable="false">Enter Your Name</string>
+    <string name="enter_your_first_name" translatable="false">Enter Your First Name</string>
+    <string name="enter_your_last_name" translatable="false">Enter Your Last Name</string>
+
+    <string name="enter_your_dob" translatable="false">Enter Your Date Of Birth</string>
+    <string name="select_your_gender" translatable="false">Select Your Gender</string>
+    <string name="enter_your_number" translatable="false">Enter Your Number</string>
+    <string name="enter_your_postal_code" translatable="false">Enter Your Postal Code</string>
+    <string name="enter_your_city" translatable="false">Enter Your City</string>
+    <string name="enter_your_country" translatable="false">Enter Your Country</string>
+
+    <string name="mock_name" translatable="false">John Bridgewater</string>
+    <string name="mock_b_id" translatable="false">B-ID: ABC-123456</string>
+    <string name="mock_dob" translatable="false">DOB: 11 March 1997</string>
+    <string name="mock_location" translatable="false">Nassau Bahamas</string>
+    <string name="mock_time" translatable="false">04:30</string>
+
+    <string name="mock_date" translatable="false">10th July 2021</string>
+    <string name="mock_hospital_name" translatable="false">Doctor\'s Hospital</string>
+    <string name="mock_test_name" translatable="false">COVID 19 Rapid Test</string>
+    <string name="mock_credit_card" translatable="false">VISA...1311</string>
+    <string name="mock_amount" translatable="false">$15.00</string>
+
+    <string name="hint_available" translatable="false">Available</string>
+    <string name="hint_login_name" translatable="false">Login Name</string>
+    <string name="hint_website_address" translatable="false">Website Address</string>
+    <string name="hint_user_name" translatable="false">User Name</string>
+    <string name="hint_password" translatable="false">Password</string>
+    <string name="hint_save" translatable="false">Save</string>
+    <string name="hint_cancel" translatable="false">Cancel</string>
+    <string name="hint_your_email" translatable="false">Your Email</string>
+    <string name="hint_friend_email" translatable="false">Friend Email</string>
+    <string name="hint_enter_mobile" translatable="false">Enter mobile</string>
+    <string name="hint_enter_your_pin" translatable="false">Enter your Password</string>
+
+    <string name="hint_send_code" translatable="false">Send Code</string>
+    <string name="hint_send" translatable="false">Send</string>
+    <string name="hint_email_address" translatable="false">Email Address</string>
+    <string name="hint_your_message" translatable="false">Your Message</string>
+    <string name="hint_search_country" translatable="false">Search</string>
+    <string name="hint_select_country_continue" translatable="false">Continue</string>
+
+    <string name="hint_send_details" translatable="false">Send Your Details</string>
+    <string name="hint_send_details_get_started" translatable="false">Get Started</string>
+    <string name="hint_send_details_desc1" translatable="false">Use B-ID to send your details to \nanother person. You will not \nreceive any of their details.</string>
+    <string name="hint_send_details_desc2" translatable="false">You\'ll see a record of this action in \nyour activity.</string>
+    <string name="hint_do_not_show_send_details" translatable="false">Don\'t Show This Again.</string>
+    <string name="hint_send_method_desc" translatable="false">Chose how to send details</string>
+    <string name="hint_send_method_face" translatable="false">Face to Face</string>
+    <string name="hint_notifications_desc1" translatable="false">Nothing to See Here</string>
+    <string name="hint_notifications_desc2" translatable="false">Once you start sharing, your receipts will appear here.</string>
+    <string name="hint_face_to_face" translatable="false">Show this QR code to the person you want to send details to. </string>
+    <string name="hint_send_details_preview" translatable="false">You\'re about to send the \nfollowing details </string>
+
+
+    <string name="hint_about_b_id" translatable="false">About B-ID</string>
+    <string name="hint_privacy_policy" translatable="false">Privacy Policy</string>
+    <string name="hint_terms_conditions" translatable="false">Terms &amp; Conditions</string>
+    <string name="hint_address" translatable="false">Address</string>
+    <string name="hint_login" translatable="false">Login</string>
+    <string name="hint_add_address" translatable="false">Add Address</string>
+    <string name="hint_forget_password" translatable="false">Forgot your password?</string>
+    <string name="hint_account_setting" translatable="false">Account Setting</string>
+    <string name="hint_delete_account" translatable="false">Delete My Account</string>
+    <string name="hint_notifications" translatable="false">Notifications</string>
+    <string name="hint_login_settings" translatable="false">Login Settings</string>
+
+
+    <string name="text_about_bid" translatable="false">BLUESTONE LABS\n\n101 Rawson Court,\nWest Bay Street, Nassus, Bahamas,\nAP59233\n\nEmail:\npartnerships@bluestonebubble.io</string>
+
+    <string name="text_desc" translatable="false">Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</string>
+
+
+    <string name="title_select_country" translatable="false">Select Country</string>
+
+    <string name="menu_b_id" translatable="false">B-ID</string>
+    <string name="menu_discover" translatable="false">Discover</string>
+    <string name="hint_no_data" translatable="false">No data available</string>
+    <string name="hint_ok" translatable="false">OK</string>
+    <string name="title_empty" translatable="false"></string>
+    <string name="text_update" translatable="false">Update</string>
+
+    <string name="mock_title_one" translatable="false">Full Name</string>
+    <string name="mock_title_two" translatable="false">John Bridgewater</string>
+    <string name="mock_mobile_number_title" translatable="false">Mobile Number</string>
+    <string name="mock_mobile_number" translatable="false">+1-242-8089086</string>
+    <string name="part_time" translatable="false">Part-time</string>
+    <string name="full_time" translatable="false">Full-time</string>
+    <string name="self_employed" translatable="false">Self-Employed</string>
+    <string name="contact_us" translatable="false">Contact Us:</string>
+    <string name="home" translatable="false">Home</string>
+    <string name="male" translatable="false">Male</string>
+    <string name="female" translatable="false">Female</string>
+    <string name="rather_not_to_say" translatable="false">Rather not to say</string>
+    <string name="api_default_error" translatable="false">Error fetching data</string>
+    <string name="book_and_pay" translatable="false">Book and Pay</string>
+    <string name="book_now" translatable="false">Book Now</string>
+    <string name="schedule_your_covid_date" translatable="false">Schedule Your Covid 19 Test Date</string>
+    <string name="back" translatable="false">Back</string>
+    <string name="reason_for_test" translatable="false">Reason for Test</string>
+    <string name="next_question" translatable="false">Next Question</string>
+    <string name="date_of_exposure" translatable="false">Date of Exposure</string>
+    <string name="close_contact_means_you_were_within_6_feet_2_meters_for_at_least_15_min_in_the_past_24_hours_period" translatable="false">Close contact means you were within 6 feet (2 meters) for at least 15 min in the past 24 hours period</string>
+    <string name="have_you_been_exposed_to_someone_who_has_tested_postive_for_covid_19_in_the_past_two_weeks" translatable="false">Have you been exposed to someone who has tested postive for Covid-19 in the past two weeks</string>
+    <string name="submit" translatable="false">Submit</string>
+    <string name="are_you_experiencing_any_of_these_symptoms" translatable="false">Are you experiencing any of these symptoms?</string>
+    <string name="select_exposure_date" translatable="false">Select exposure date</string>
+    <string name="system_onset" translatable="false">System Onset</string>
+    <string name="selct_onset_date" translatable="false">Select Onset Date</string>
+    <string name="contact_of_known_case" translatable="false">CONTACT OF KNOWN CASE</string>
+    <string name="instagram_or_twitter_names" translatable="false">Instagram or Twitter Names</string>
+
+    <string name="name_of_employer" translatable="false">name of employer</string>
+    <string name="name_of_referral" translatable="false">name of referral</string>
+    <string name="name_of_country_island" translatable="false">name of country island last visited</string>
+    <string name="available" translatable="false">Available</string>
+    <string name="free" translatable="false">Free</string>
+    <string name="paid" translatable="false">Paid</string>
+    <string name="enter_your_email" translatable="false">Enter Your Email</string>
+    <string name="email_string_source" translatable="false">Email</string>
+    <string name="test_id_string_resource" translatable="false">Test ID</string>
+
+    <string name="booking_date">Booking Date</string>
+    <string name="island">Island</string>
+    <string name="medical_provider">Medical Provider</string>
+    <string name="test_type">Test Type</string>
+    <string name="location">Location</string>
+    <string name="can_not_book_from_past">You can not book a slot from the past</string>
+
+    <string name="uploading_document">Uploading Document..</string>
+    <string name="we_are_reviewing_your">We Are Reviewing Your</string>
+    <string name="please_don_t_close_the_app_until_the_upload_is_complete">Please don\'t close the app until the upload is complete</string>
+    <string name="this_should_only_take_a_few_min">This should only take a few minutes. Once your document has been approved, it will be added to your B-ID and ready to use</string>
+    <string name="test_needed_title_2" translatable="false">Book a Test and self isolate</string>
+    <string name="test_needed_title_3" translatable="false">Self-isolate</string>
+    <string name="test_needed_title_4" translatable="false">Do daily checkups</string>
+    <string name="test_needed_title_5" translatable="false">Learn more</string>
+    <string name="test_need_description_1" translatable="false">Your healthcare provider will tell you what to do next</string>
+    <string name="test_need_description_2" translatable="false">Because you have symptoms of COVID-19, you need to call a healthcare provider and self-isolate</string>
+    <string name="test_need_description_3" translatable="false">Because you have symptoms of COVID-19, you need to call a healthcare provider and self-isolate. \n\nMost people with COVID-19 are able to recover at home. Isolation keeps sick people away from healthy people to stop sickness from spreading. Even in your home, you should try to stay away from other people as much as possible. Stay at home except to get medical care. \n\nYou should stay isolated from other people until you have been symptom-free for at least 3 days and it has been at least 7 days since you first got sick. This means you did not use medicine to lower your fever and all your other symptoms are gone.</string>
+    <string name="test_need_description_4" translatable="false">Check your symptoms every day in the app.</string>
+    <string name="test_need_description_5" translatable="false">COVID-19 is caused by a virus in a family of vi-ruses called coronavirus. Tap here to learn more about COVID-19.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="checkout">Checkout</string>
+    <string name="topup">Top up</string>
+    <string name="your_balance">Your balance</string>
+    <string name="your_cards">Your Cards</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+</resources>

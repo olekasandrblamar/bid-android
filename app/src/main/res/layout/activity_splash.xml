@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_background">
+
+
+    <ImageView
+        android:id="@+id/iv_pattern_one_splash"
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="@dimen/_200sdp"
+        android:src="@drawable/ic_bid_pattern_one"
+        android:translationX="-30dp"
+        android:translationY="-35dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_logo_splash"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_210sdp"
+            android:src="@drawable/ic_bid_logo"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_logo_text_splash"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:src="@drawable/ic_bid_logo_text"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_logo_splash" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_pattern_two_splash"
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="@dimen/_120sdp"
+        android:src="@drawable/ic_bid_pattern_two"
+        android:translationX="40dp"
+        android:translationY="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_powered_by_splash"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_12sdp"
+        android:src="@drawable/ic_powered_by"
+        app:layout_constraintBottom_toTopOf="@+id/iv_company_logo_splash"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_company_logo_splash"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:src="@drawable/ic_company_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

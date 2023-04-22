@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/custom_tool_bar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="@dimen/pad_mar_0"
+        android:layout_height="@dimen/pad_mar_0"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tool_bar"
+        app:layout_constraintWidth_percent="0.9">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_logo_splash"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_160sdp"
+                android:src="@drawable/ic_bid_logo"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/colorText" />
+            <LinearLayout
+                android:id="@+id/phone_number_lyt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_20sdp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/iv_logo_splash"
+
+                >
+                <TextView
+                    android:id="@+id/country_code"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="match_parent"
+                    android:text="+1242"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/_13sdp"
+                    android:backgroundTint="@color/colorHint"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="center"
+                    >
+
+                </TextView>
+                <EditText
+                    android:id="@+id/phone_number_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorHint"
+                    android:fontFamily="@font/poppins_regular"
+                    android:hint="@string/hint_enter_mobile"
+                    android:imeOptions="actionNext"
+                    android:inputType="phone|number"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/_13sdp"
+                    android:paddingBottom="@dimen/_15sdp"
+                    />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/pin_et"
+                android:layout_width="@dimen/pad_mar_0"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:backgroundTint="@color/colorHint"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="@string/hint_enter_your_pin"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:paddingBottom="@dimen/_15sdp"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/_13sdp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/phone_number_lyt" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_forget_password_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:padding="@dimen/_10sdp"
+                android:text="@string/hint_forget_password"
+                android:textColor="@color/colorTextSecondary"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pin_et" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_login"
+                android:layout_width="@dimen/pad_mar_0"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/shape_sign_in_corner_radius"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:text="@string/hint_login"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_14sdp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_forget_password_login"
+                app:layout_constraintWidth_percent="0.6" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
